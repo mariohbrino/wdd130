@@ -86,3 +86,8 @@ h1 {
     float: right;
     width: 125px;
 }
+
+.socialmedia a img {
+    width: 24px;
+    height: 24px;
+}
