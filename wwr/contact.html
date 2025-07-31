@@ -25,9 +25,9 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contact-main">
+        <h1>Meet Our Team</h1>
         <div class="our-team">
-            <h2>Meet Our Team</h2>
             <div class="our-team-grid">
                 <figure class="our-team-item">
                     <img src="images/rafting-1.jpg" alt="Rafting Background 1">
@@ -59,26 +59,51 @@
                 </p>
             </div>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d760.0902270838423!2d-111.57238018128656!3d40.356521169312195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1753988534636!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d760.0902270838423!2d-111.57238018128656!3d40.356521169312195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1753988534636!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="contact-form">
             <form class="form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </fieldset>
 
-                <label for="email_address">Email:</label>
-                <input type="email_address" id="email_address" name="email_address" required>
+                <fieldset>
+                    <label for="email_address">Email:</label>
+                    <input type="email" id="email_address" name="email_address" required>
+                </fieldset>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <fieldset class="purpose-group">
+                    <legend>Purpose:</legend>
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general">
+                        General Inquiry
+                    </label>
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label for="purpose-website">
+                        <input type="radio" id="purpose-website" name="purpose" value="website">
+                        Website Suggestion
+                    </label>
+                </fieldset>
 
-                <label for="subscribe">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                <fieldset>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </fieldset>
 
                 <button type="submit">Submission</button>
+
+                <fieldset>
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                </fieldset>
             </form>
         </div>
     </main>
