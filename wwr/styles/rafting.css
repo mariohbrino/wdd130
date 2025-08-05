@@ -337,3 +337,52 @@ header .logo-box img {
 .wireframe-link:hover {
     color: var(--accent1-color);
 }
+
+.trips-view {
+    display: flex;
+    background-image: linear-gradient(to bottom right, var(--accent2-color), var(--secondary-color));
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.trips-view a {
+    font-size: larger;
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.trips-view a:hover {
+    color: var(--accent1-color);
+}
+
+.offerings {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: var(--screen-large);
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+    max-width: var(--screen-large);
+}
+
+.offerings-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerings-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
