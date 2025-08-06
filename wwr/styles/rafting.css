@@ -386,3 +386,182 @@ header .logo-box img {
     object-fit: cover;
     display: block;
 }
+
+.trips-section {
+    margin: 1rem auto;
+    max-width: var(--screen-xlarge);
+}
+
+.trips-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.trips-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+.trips-table {
+    width: 100%;
+    border: none;
+    margin: 2rem 0;
+    background-color: var(--accent1-color);
+    overflow: hidden;
+}
+
+.trips-table thead {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.trips-table th {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.trips-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.trips-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trips-table td:nth-child(3) {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.trips-table td:nth-child(4) {
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.trip-notes {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--primary-color);
+}
+
+.trip-notes h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.trip-notes ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.trip-notes li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.trip-notes li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.trip-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.trips-details h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.trip-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 3rem;
+    margin: 1rem 0;
+    max-width: var(--screen-large);
+}
+
+.trip-details-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.trip-details-card {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+
+.trip-details-card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.trip-details-image {
+    flex: 1 1 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trip-details-image img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.upcoming-trips {
+    text-align: center;
+}
+
+.upcoming-trips-card {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom right, var(--accent2-color), var(--secondary-color));
+}
+
+.upcoming-trips ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    text-align: start;
+}
+
+.upcoming-trips li {
+    margin-bottom: 0.5rem;
+}
+
+.upcoming-trips a {
+    color: var(--accent1-color);
+    font-size: larger;
+    font-family: var(--body-font);
+    text-decoration: none;
+}
+
+.upcoming-trips a:hover {
+	color: var(--primary-color);
+	text-decoration: none;
+}
